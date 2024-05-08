@@ -1,0 +1,221 @@
+/* Home.css */
+
+.movies-container {
+  background-color: #162930;
+  background-image: url('https://img.freepik.com/free-photo/movie-background-collage_23-2149876014.jpg?w=1060&t=st=1714729006~exp=1714729606~hmac=5fa18dc163c6569def046a31d39e14ddd4004d8cb811363ba65f00119633bb77');
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  padding: 20px;
+}
+
+.card {
+  position: relative;
+top: 0px;
+left: 0px;
+display: flex;
+flex-wrap: wrap;
+align-content: flex-start;
+border: 1px solid rgb(227, 227, 227);
+
+overflow: hidden;
+margin-top: 30px;
+
+
+box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+background-color: rgb(255, 255, 255);
+box-sizing: border-box;
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  outline: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+.card:hover .overview {
+  transform: translateY(-100%);
+}
+
+.card {
+  position: relative;
+}
+
+.overview {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha value for transparency */
+  padding: 10px;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.card:hover .overview {
+  transform: translateY(0%);
+}
+
+h5 {
+  margin-top: 10px;
+}
+
+.video-player {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-player button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.re {
+  font-size: 1em;
+  margin: 0px;
+  padding: 0px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 0px;
+  box-sizing: border-box;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.rating {
+  display: inline-block;
+  font-size: 24px; /* Adjust size as needed */
+  color: #FFD700; /* Set star color */
+}
+
+.rating span {
+  display: inline-block;
+  width: 20px; /* Adjust width as needed */
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.rating span:before {
+  content: '\2605'; /* Unicode character for star */
+  position: absolute;
+  left: 0;
+  color: #e4e4e4; /* Set star outline color */
+}
+
+.rating span:hover:before,
+.rating span:hover ~ span:before,
+.rating span:hover ~ span:before:hover {
+  color: #FFD700; /* Set star color on hover */
+}
+
+.rating {
+  display: flex;
+}
+
+.rating .star-red:before {
+  color: red;
+}
+
+.rating .star-yellow:before {
+  color: rgb(250, 133, 24);
+}
+
+.rating .star-green:before {
+  color: green;
+}
+.title {
+ 
+  color: rgb(0, 0, 0);
+  background: 0px 0px;
+  
+  box-sizing: border-box;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar in Edge */
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 250px; /* Adjust card width as needed */
+  margin-right: 10px; /* Adjust margin between cards */
+  scroll-snap-align: start;
+}
+
+
+
+
+.section-title {
+  font-size: 24px;
+  color: #ffffff;
+  top: 0;
+  bottom: 0;
+}
+
+
+
+.video-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.card .over:hover .overview {
+  visibility: hidden;
+}

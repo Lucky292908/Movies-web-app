@@ -1,0 +1,28 @@
+.rotating-lines {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .rotating-lines.visible {
+    display: block;
+  }
+  
+  .rotating-lines circle {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 164.93361431346415, 56.97787143782138;
+    transform-origin: center;
+    animation: rotate 2s linear infinite;
+    
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

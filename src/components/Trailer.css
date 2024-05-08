@@ -1,0 +1,113 @@
+.image-container {
+  width: 100%;
+  height: 80vh; 
+  overflow-x: auto;
+  object-fit: cover;
+}
+.App{
+
+ 
+  background-image: url('https://img.freepik.com/free-photo/movie-background-collage_23-2149876014.jpg?w=1060&t=st=1714729006~exp=1714729606~hmac=5fa18dc163c6569def046a31d39e14ddd4004d8cb811363ba65f00119633bb77');
+}
+
+.video-container {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; 
+  z-index: 1;
+}
+
+.close-button {
+  color: white;
+background-color: red;
+border-radius: 8px;
+  position: absolute;
+  padding: 10px;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow-x: auto;
+  padding-right: 2px;
+  padding-bottom: 2px;
+  object-fit: cover;
+}
+
+.poster-image {
+  object-fit: cover;
+  width: 100%;
+ 
+   
+ height: 590px; 
+
+ }
+ .slick-slide img {
+
+ 
+  display: block;
+}
+ 
+.slick-prev,
+.slick-next {
+ 
+  
+  font-size: 20px;
+  border: none;
+  border-radius: 50%; /* Circular buttons */
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.slick-prev {
+  
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .trailer-container {
+    max-width: 100%; /* Adjust max-width for smaller screens */
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .video-container {
+    width: 100%;
+    height: 45vh; /* Adjust the height of the video container */
+  }
+
+  .poster-image {
+    width: 100%; /* Make images full width */
+    height: 44vh;
+    object-fit: cover; /* Adjust the height of the video container */
+  }
+
+  
+
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    overflow-x: auto;
+}
+}

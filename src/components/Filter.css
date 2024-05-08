@@ -1,0 +1,86 @@
+.filter{
+    color: white;
+}
+.filter {
+    margin-bottom: 30px;
+  }
+ 
+  
+
+  .movie-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .movie-info {
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  .movie-info h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    overflow: hidden;
+   
+    white-space: nowrap; /* Optional: Prevent text from wrapping */
+  }
+  
+  .movie-info p {
+    margin: 0;
+  }
+
+  
+ 
+  .movie-card {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    width: 200px; /* Adjust width as needed */
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+
+  /* Movie card */
+  .movie-card {
+    display: inline-block;
+    width: 250px; /* Adjust width as needed */
+    margin-right: 20px; /* Adjust margin as needed */
+    vertical-align: top;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  
+
+  
+  /* Add hover effect */
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  
+
+.filter-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px; /* Adjust padding as needed */
+  }
+
+
+
+  .movie-container {
+    margin-top: 50px; /* Adjust according to the height of your filter container */
+    overflow-x: auto;
+  }
+  
+ 
